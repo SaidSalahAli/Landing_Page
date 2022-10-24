@@ -41,6 +41,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -115,13 +116,6 @@ main {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-}
-
-.main__hero button:hover {
-
-  background: linear-gradient(0deg, rgba(162, 3, 157, 0.6) 0%, rgb(0 0 0 / 10%) 100%);
-  background: linear-gradient(0deg, rgba(162, 3, 157, 0.6) 0%, rgb(0 0 0 / 10%) 100%);
-  transition: ease 0.5s
 }
 
 section {
