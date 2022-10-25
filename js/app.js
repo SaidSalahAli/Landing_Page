@@ -19,7 +19,7 @@ class Navbar {
 
   constructor() {
     window.onscroll = this.scroll;
-
+    this.scrollSmooth(ul);
     this.toggleFunction(this.toggle);
   }
   /**
@@ -28,8 +28,9 @@ class Navbar {
   menu() {
     ul.innerHTML = "";
     sections.forEach((section) => {
-      const listItem = `<li><a href="#${section.id}" data-nav="${section.id}" class="menu__link">${section.dataset.nav}</a></li>`;
+      const listItem = `<li><a data-nav="${section.id}" class="menu__link">${section.dataset.nav}</a></li>`;
       ul.insertAdjacentHTML("beforeend", listItem);
+      console.log(section.id);
     });
   }
 
@@ -56,15 +57,13 @@ class Navbar {
   /**
    * When the user clicks on the button, scroll to the top of the document
    */
-  scrollToSection() {
-    ul.addEventListener("click", function (event) {
+  scrollSmooth(element) {
+    element.addEventListener("click", (event) => {
       event.preventDefault();
-      if (event.target.dataset.nav) {
-        document.getElementById(event.target.dataset.nav).scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-        });
-      }
+      if (event.target.dataset.nav)
+        document
+          .getElementById(event.target.dataset.nav)
+          .scrollIntoView({ behavior: "smooth" });
     });
   }
 
@@ -86,7 +85,6 @@ let navbar = new Navbar();
   /**
    * creating more sections after loaded the page
    */
-
   addEventListener("load", () => {
     navbar.menu();
   });

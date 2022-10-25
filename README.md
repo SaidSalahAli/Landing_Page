@@ -10,12 +10,13 @@ project is a widget to convert a page from static content to dynamic using the f
 - the most important events
 - The most important references
 
-
-
 ├───css
-└───js
+├───css
+|   └───style
+├───js
+|   └───app
 
-## LanguSkillages used
+## language skills used
 
 - HTML (index.html)
 - CSS (css/styles.css)
@@ -29,11 +30,10 @@ When you open the **index.html** page you will find 4 sections and 4 links creat
 
 ## Most important functions
 
-- addNewSection()
-- scroll()
-- genrate()
 - menu()
-- scrollToSection()
+- scroll()
+- scrollSmooth()
+- toggleFunction()
 - main function
 
 ## the most important events
