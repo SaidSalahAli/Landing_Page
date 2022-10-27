@@ -42,7 +42,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: var(--main-bg-color);
   background: var(--main-bg-gradient-color);

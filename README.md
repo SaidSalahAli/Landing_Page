@@ -9,7 +9,7 @@ project is a widget to convert a page from static content to dynamic using the f
 - Most important functions
 - the most important events
 - The most important references
-
+ 
 ├───css
 ├───css
 |   └───style

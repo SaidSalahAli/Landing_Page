@@ -25,7 +25,8 @@ class Navbar {
   /**
    *	 Build menu
    */
-  menu() {
+  menu() { 
+    
     ul.innerHTML = "";
     sections.forEach((section) => {
       const listItem = `<li><a data-nav="${section.id}" class="menu__link">${section.dataset.nav}</a></li>`;
